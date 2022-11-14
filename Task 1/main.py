@@ -17,3 +17,15 @@ users = [
   { "id": '8', "name": 'Simon Peterson', "age": 30, "hasDog": False },
   { "id": '9', "name": 'Daniel Cane', "age": 51, "hasDog": True },
 ]
+
+def filter_dog_owners(users):
+  dog = [user for user in users if user['hasDog']==True]
+  print(dog)
+
+filter_dog_owners(users)
+
+def filter_adults(users):
+  atsakymas = [user for user in users if user['age']>=18]
+  print(atsakymas)
+
+filter_adults(users)
